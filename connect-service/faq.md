@@ -19,7 +19,7 @@ final result = await ParticleConnect.connect(WalletType.metamask);
 2\. Sign something, for example sign message, you can get signed message in success call back.
 
 ```swift
-// we request public address because a adapter can connect more than one address.
+// we request public address because an adapter can connect more than one address.
 
 // swift
 adapter.signMessage(publicAddress: address, message: message)
@@ -29,7 +29,7 @@ String result = await ParticleConnect.signMessage(WalletType.metamask, getPublic
 
 ```
 
-3\. Add chain, MetaMask support add chain, other wallets don't support this methods, you can get success string in success call back.
+3\. Add chain, MetaMask support add chain, other wallets don't support this method, you can get success string in success call back.
 
 {% hint style="info" %}
 MetaMask doesn't support add ethereum testnet, such as goerli, instead support switch to goerli.
@@ -47,7 +47,7 @@ adapter.addEthereumChain(publicAddress: publicAddress, chainId: chainId, chainNa
 String result = await ParticleConnect.addEthereumChain(walletType, getPublicAddress(), chainId);
 ```
 
-4\. Switch chain, MetaMask support add chain, other wallets don't support this methods, you can get success string in success call back.
+4\. Switch chain, MetaMask support add chain, other wallets don't support this method, you can get success string in success call back.
 
 ```swift
 // swift
